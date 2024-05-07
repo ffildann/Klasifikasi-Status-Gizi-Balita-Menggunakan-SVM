@@ -4,4 +4,4 @@ Pandas
 Numpy
 Seaborn
 Joblib
-Mathplotlib
+Matplotlib
