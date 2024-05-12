@@ -1,7 +1,6 @@
 import streamlit as st
 import numpy as np
 import joblib
-import matplotlib.pyplot as plt
 
 
 # Load model
@@ -16,10 +15,10 @@ st.title('Klasifikasi Stunting dan Status Gizi Balita Dengan SVM')
 st.markdown('---')
 
 
-Umur = st.text_input ('Inputkan umur balita (bulan)')
+Umur = st.text_input ('Inputkan umur balita (bulan)', min_value=0, max_value=60)
 JenisKelamin = st.radio('Jenis Kelamin', ['laki-laki', 'perempuan'])
 Tinggi = st.text_input ('Masukkan tinggi badan (cm)')
-Berat = st.text_input('Masukkan berat badan (kg)')
+Berat = st.text_input('Masukkan berat badan (kg). Contoh : 8.2')
 
 JK = 0 if JenisKelamin == 'laki-laki' else 1
 
