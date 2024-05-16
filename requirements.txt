@@ -1,5 +1,5 @@
 Streamlit
-Scikit-learn
+Scikit-learn 1.2.2
 Pandas
 Numpy
 Seaborn
