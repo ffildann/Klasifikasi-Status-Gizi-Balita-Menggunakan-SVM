@@ -19,7 +19,7 @@ Umur = st.number_input ('Inputkan umur balita (0 - 60 bulan)', min_value=0, max_
 if Umur < 0 or Umur > 60:
     st.error("Umur harus berada di rentang 0 sampai 60 bulan")
 JenisKelamin = st.radio('Jenis Kelamin', ['laki-laki', 'perempuan'])
-Tinggi = st.text_input ('Masukkan tinggi badan (cm)')
+Tinggi = st.text_input ('Masukkan tinggi badan (cm). Contoh : 98.3')
 Berat = st.text_input('Masukkan berat badan (kg). Contoh : 8.2')
 
 JK = 0 if JenisKelamin == 'laki-laki' else 1
